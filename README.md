@@ -1,27 +1,12 @@
-# RxJS
+# Basics
+1. Function - A Function is a lazily evaluated computation that synchronously returns a single value on invocation.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
+2. Generator - A generator is a lazily evaluated computation that synchronously returns zero to (potentially) infinite values on iteration
 
-## Development server
+3. Promise - A Promise is a computation that may (or may not) eventually return a single value
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+4. Observable - An Observable is a lazily evaluated computation that can synchronously or asynchronously return zero to (potentially) infinite values from the time it's invoked onwards.
 
-## Code scaffolding
+5. Observables are like functions with zero arguments, but generalize those to allow multiple values.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. Subscribing to an Observable is analogous to calling a Function
