@@ -10,3 +10,10 @@
 5. Observables are like functions with zero arguments, but generalize those to allow multiple values.
 
 6. Subscribing to an Observable is analogous to calling a Function
+
+7. In RxJS, pipeable operators are functions used to transform or manipulate data emitted by observables in a declarative and composable manner.
+
+8.  When pipeable operators are called, they do not mutate the existing observable instance but rather return a new observable instance with the applied transformations.
+
+9. RxJs - Reactive extensions for Javascript
+
