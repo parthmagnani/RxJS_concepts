@@ -1,1 +1,23 @@
-<p>promises works!</p>
+<div class="p-[20px]">
+    <h1 class=" font-bold text-2xl">Chapter-1, RxJS Introduction</h1>
+
+    <h3 class=" font-semibold text-xl mt-2">1. RxJS = Reactive extension for javascript</h3>
+
+    <h3 class=" font-semibold text-xl mt-2">2. Pull vs Push System </h3>
+    <h5 class=" font-medium text-lg mt-1">There are two things Data consumer and Data producer</h5>
+    <p class=" font-medium mt-1"><span class="font-medium text-lg">Pull System - </span>  In Pull systems, the Consumer determines when it receives data from the data Producer. The Producer itself is unaware of when the data will be delivered to the Consumer.Like in javascript every function is pull system. Javascript function will never return data untill and unless it has been called. The code written for invoking function is data consumer and the function(return statement) is data producer</p>
+
+    <br>
+
+    <p class=" font-medium mt-1"><span class="font-medium text-lg">Push system - </span>  In this system data producer will determines when it has to send data to data consumer, like Promises in javascript</p>
+
+    <p class=" font-medium">As promises either get resolved or reject it means promise return only single value</p>
+
+    <button class="bg-blue-400 px-2 rounded text-white py-2 font-semibold mt-3" (click)="promiseExample()">Return Promise</button>
+    <span class="ml-2 font-semibold">{{this.generatedValueByPromise != null ? this.generatedValueByPromise > 5 ? this.generatedValueByPromise + '- Promise gets rejected' : this.generatedValueByPromise +'- Promise gets resolved' : null}}</span>
+
+    <p class=" font-medium mt-1">To see demo click above button it will generate any number between 1 - 10 if number is greater than 5 then our promise will get rejected and otherwise our promise will be resolved. Now let number is 5 so it will get resolved after 5 sec, let number is 3 it will get resolved in 3 sec. So here when button is clicked data consumer wants data but as Promises(data producer) will not send data immediatly, it will send data accordingly. So mainly Promises are used to perform or to evalute asynchronous data</p>
+
+    <p class=" font-medium mt-1">Also <span class="font-semibold">Observables</span> are also an important part of Push system</p>
+
+</div>
